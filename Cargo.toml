@@ -1,0 +1,10 @@
+[package]
+name = "test_pyo3"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+path = "rust_ext/lib.rs"
+
+[dependencies]
+pyo3 = { version = "0.21.2", features = ["extension-module"] }
